@@ -30,8 +30,9 @@ class Student
     sql = <<-SQL
       INSERT INTO students 
       VALUES (?, ?)
-    SQL 
+    SQL
     
+    DB[:conn]
       
 
 end
