@@ -33,7 +33,7 @@ class Student
     SQL
     
     DB[:conn].execute(sql, self.name, self.grade)
-    @id = DB[:conn].excute 
+    @id = DB[:conn].excute("SELECT LAST INSERT ROW ID")
   end 
       
 
